@@ -1,0 +1,23 @@
+{
+  "name": "warning",
+  "version": "1.0.0",
+  "description": "Visit: [jasineri/warning](https://jasineri.github.io/warning/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasineri/warning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasineri/warning/issues"
+  },
+  "homepage": "https://github.com/jasineri/warning#readme",
+  "devDependencies": {
+    "rss-parser": "^3.12.0"
+  }
+}
