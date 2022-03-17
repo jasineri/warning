@@ -4,7 +4,7 @@
   "description": "Visit: [jasineri/warning](https://jasineri.github.io/warning/)",
   "main": "index.js",
   "scripts": {
-    "prestart" : "npm run build",
+    "prestart": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ncc build src/index.js"
   },
@@ -22,7 +22,8 @@
   "devDependencies": {
     "@actions/core": "^1.6.0",
     "@vercel/ncc": "^0.33.3",
-    "nodemailer": "^6.7.2",
-    "rss-parser": "^3.12.0"
+    "htmlparser2": "^7.2.0",
+    "node-fetch": "2.0",
+    "nodemailer": "^6.7.2"
   }
 }
