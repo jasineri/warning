@@ -1,0 +1,16 @@
+name: Check NINA warnings
+description: Check NINA warnings
+author: jasineri
+inputs:
+  email:
+    description: email to send warnings to
+    required: true
+  email_pass:
+    description: email authentification password
+    required: true
+runs:
+  using: node16
+  main: dist/index.js
+branding:
+  icon: aperture
+  color: blue
