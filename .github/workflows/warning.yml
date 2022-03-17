@@ -8,7 +8,7 @@ jobs:
     name: Check NINA warnings
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: jasineri/warning@v1
         with:
            email: ${{ secrets.EMAIL }}
