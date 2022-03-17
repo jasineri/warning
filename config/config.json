@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Köln Warnung",
+    "url": "https://warnung.bund.de/api31/mowas/rss/053150000000.rss"
+  },
+  {
+    "title": "Leverkusen Warnung",
+    "url": "https://warnung.bund.de/api31/mowas/rss/053160000000.rss"
+  }
+]
