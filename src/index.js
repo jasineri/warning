@@ -1,6 +1,7 @@
 const fs = require('fs');
+const fetch = require('node-fetch');
 const core = require("@actions/core");
-let Parser = require('rss-parser');
+let htmlparser2 = require("htmlparser2");
 let nodemailer = require('nodemailer');
 
 (async () => {
@@ -30,13 +31,13 @@ let nodemailer = require('nodemailer');
 
     function ReportMaker() {
         let report = "";
-        let parser = new Parser();
         let linkChecker = new LinkChecker();
         linkChecker.loadLinks();
 
         async function parseRss(title, url) {
-
-            let feed = await parser.parseURL(url);
+            let res = await fetch(url);
+            let html = await res.text();
+            let feed = htmlparser2.parseFeed(html);
 
             let newWarning = false;
             for (let remoteItem of feed.items) {
@@ -46,7 +47,7 @@ let nodemailer = require('nodemailer');
                     }
                     report += "<a href=\"" + remoteItem.link + "\">"
                         + remoteItem.title
-                        + "</a><p>" + remoteItem.content + "</p><br/>";
+                        + "</a><p>" + remoteItem.description + "</p><br/>";
                     newWarning = true;
                 }
             }
