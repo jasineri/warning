@@ -1,7 +1,7 @@
 name: Check NINA warnings
 on: 
-#  schedule:
-#    - cron: '*/15 * * * *'
+  schedule:
+    - cron: '*/15 * * * *'
   workflow_dispatch:  
 jobs:
   build:
@@ -16,3 +16,8 @@ jobs:
       - uses: jasineri/simple-push-action@v1
         with:
            file_pattern: ./*.html data/links.json
+      - uses: jasineri/simple-push-action@v1
+        with:
+          # Files pattern to add, wildcards supported
+          # Optional, default: ./*.*
+          file_pattern: ./*.html
