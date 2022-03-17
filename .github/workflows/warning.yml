@@ -1,4 +1,4 @@
-name: gitartwork from a contribution graph
+name: Check NINA warnings
 on: 
 #  schedule:
 #    - cron: '*/15 * * * *'
