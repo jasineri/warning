@@ -15,4 +15,4 @@ jobs:
            email_pass: ${{ secrets.EMAIL_PASS }}
       - uses: jasineri/simple-push-action@v1
         with:
-           file_pattern: ./warning.html data/links.json
+           file_pattern: ./*.html data/links.json
