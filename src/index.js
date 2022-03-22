@@ -1,8 +1,8 @@
-const fs = require('fs');
-const fetch = require('node-fetch');
-const core = require("@actions/core");
-let htmlparser2 = require("htmlparser2");
-let nodemailer = require('nodemailer');
+import fs from 'fs';
+import fetch from 'node-fetch';
+import core from '@actions/core';
+import htmlparser2 from 'htmlparser2';
+import nodemailer from 'nodemailer';
 
 (async () => {
 

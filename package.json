@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Visit: [jasineri/warning](https://jasineri.github.io/warning/)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "update": "npx npm-check-updates -u && npm install",
     "prestart": "npm run build",
