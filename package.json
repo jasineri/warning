@@ -6,7 +6,6 @@
   "scripts": {
     "update": "npx npm-check-updates -u && npm install",
     "prestart": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ncc build src/index.js"
   },
   "repository": {
