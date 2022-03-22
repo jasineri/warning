@@ -4,6 +4,7 @@
   "description": "Visit: [jasineri/warning](https://jasineri.github.io/warning/)",
   "main": "index.js",
   "scripts": {
+    "update": "npx npm-check-updates -u && npm install",
     "prestart": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "ncc build src/index.js"
@@ -24,6 +25,6 @@
     "@vercel/ncc": "^0.33.3",
     "htmlparser2": "^7.2.0",
     "node-fetch": "3.2",
-    "nodemailer": "^6.7.2"
+    "nodemailer": "^6.7.3"
   }
 }
