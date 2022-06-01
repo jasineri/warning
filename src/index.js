@@ -1,7 +1,7 @@
 import fs from 'fs';
 import fetch from 'node-fetch';
 import core from '@actions/core';
-import htmlparser2 from 'htmlparser2';
+const htmlparser2 = require("htmlparser2");
 import nodemailer from 'nodemailer';
 
 (async () => {
