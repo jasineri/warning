@@ -25,6 +25,6 @@
     "@vercel/ncc": "^0.34.0",
     "htmlparser2": "^8.0.1",
     "node-fetch": "3.2",
-    "nodemailer": "^6.7.5"
+    "nodemailer": "^6.7.7"
   }
 }
