@@ -24,7 +24,8 @@
     "@actions/core": "^1.10.0",
     "@vercel/ncc": "^0.34.0",
     "htmlparser2": "^8.0.1",
-    "node-fetch": "3.3",
-    "nodemailer": "^6.8.0"
+    "node-fetch": "^3.3.0",
+    "nodemailer": "^6.8.0",
+    "npm-check-updates": "^16.4.3"
   }
 }
